@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Satayummy - Contact</title>
+    <link rel="shortcut icon" href="./assets/img/icon.jpg" type="image/jpg" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <!-- bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <!-- my css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- loader -->
+    <div class="spinner-wrapper">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-opacity-10 navbar-custom">
+      <div class="container-fluid py-1">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <a class="navbar-brand me-auto text-primary fs-2 ms-3" href="#" style="font-family: Cookie, cursive"><i class="fa-solid fa-utensils"></i> Satayummy</a>
+          <div class="navbar-nav">
+            <a class="nav-link me-3 text-white" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link me-3 text-white" href="./about.html">About</a>
+            <a class="nav-link me-3 text-white" href="./menu.html">Menu</a>
+            <a class="nav-link me-3 text-white" href="./services.html">Services</a>
+            <a class="nav-link me-3 text-white link-active" href="./contact.html">Contact</a>
+            <a href="./order.html" class="btn btn-primary me-5">Order</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <button type="button" id="btnTop" class="btn btn-primary" style="position: fixed; bottom: 25px; right: 25px; z-index: 9999" data-bs-toggle="tooltip" data-bs-title="Default tooltip">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Banner -->
+    <div class="container-fluid banner-about d-flex justify-content-center align-items-center text-center flex-column">
+      <h1 class="text-white">Contact</h1>
+      <p class="text-white"><a class="text-primary text-decoration-none" href="index.html">Home</a> / Contact</p>
+    </div>
+
+    <div class="container-fluid pt-5">
+      <h2 class="text-primary text-center fs-1" style="font-family: Cookie, cursive">Contact us</h2>
+      <div id="container-contact" class="container-fluid mt-5 pt-5">
+        <div class="sec4 d-flex" style="height: 450px">
+          <div class="maps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.5885460109153!2d112.62404240772084!3d-7.937967679021121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629e6b8f41bcf%3A0x8b409da605dc7bd9!2sINSTITUT%20ASIA!5e0!3m2!1sid!2sid!4v1763455564116!5m2!1sid!2sid"
+              width="700"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="p-0"
+            ></iframe>
+          </div>
+          <div class="booking w-100 align-content-center">
+            <div class="formBooking align-content-center">
+              <form action="" class="d-flex justify-content-center flex-column gap-2 px-5 pt-3">
+                <div class="d-flex gap-2">
+                  <div class="form-floating mb-3 w-50">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required />
+                    <label for="floatingInput">Your Name</label>
+                  </div>
+                  <div class="form-floating mb-3 w-50">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required />
+                    <label for="floatingInput">Your Email</label>
+                  </div>
+                </div>
+                <div class="form-floating mb-3">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 70px"></textarea>
+                  <label for="floatingTextarea2">Subject</label>
+                </div>
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 120px"></textarea>
+                  <label for="floatingTextarea2">Message</label>
+                </div>
+                <button type="submit" class="btn btn-primary mt-2 mb-1">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="mt-5 pt-5 pb-3">
+      <div class="d-flex justify-content-around pt-5">
+        <div class="flex flex-column mx-5">
+          <h2 class="text-primary" style="font-family: Cookie, cursive">Satayummy</h2>
+          <div class="footerList d-flex flex-column gap-2">
+            <a class="text-decoration-none text-white" href="./index.html"><i class="me-2 fa-solid fa-house"></i> Home</a>
+            <a class="text-decoration-none text-white" href="./about.html"><i class="me-2 fa-solid fa-circle-info"></i> About Us</a>
+            <a class="text-decoration-none text-white" href="./menu.html"><i class="me-2 fa-solid fa-utensils"></i> Menu</a>
+            <a class="text-decoration-none text-white" href="./services.html"><i class="me-2 fa-solid fa-concierge-bell"></i> Services</a>
+            <a class="text-decoration-none text-white" href="./contact.html"><i class="me-2 fa-solid fa-phone"></i> Contact</a>
+          </div>
+        </div>
+        <div class="flex flex-column mx-5">
+          <h2 class="text-primary" style="font-family: Cookie, cursive">Contact</h2>
+          <div class="footerList d-flex flex-column gap-2">
+            <span class="text-white"><i class="me-2 fa-solid fa-location-dot"></i> JL. Suhat NO 34</span>
+            <span class="text-white"><i class="me-2 fa-solid fa-phone"></i> +6282233712925</span>
+            <span class="text-white"><i class="me-2 fa-solid fa-envelope"></i> vitofirman7@gmai.com</span>
+          </div>
+        </div>
+        <div class="flex flex-column mx-5">
+          <h2 class="text-primary" style="font-family: Cookie, cursive">Opening</h2>
+          <div class="footerList d-flex flex-column gap-2">
+            <span class="text-white"><i class="me-2 fa-solid fa-door-open"></i>Monday - Saturday</span>
+            <span class="text-white">09AM - 09PM</span>
+            <br />
+            <span class="text-white"><i class="me-2 fa-solid fa-door-open"></i>Sunday</span>
+            <span class="text-white">10AM - 08PM</span>
+          </div>
+        </div>
+        <div class="flex flex-column mx-5">
+          <h2 class="text-primary" style="font-family: Cookie, cursive">Follow Us</h2>
+          <div class="footerList d-flex flex-column gap-2">
+            <a class="text-decoration-none text-white" href="#"><i class="me-2 fa-brands fa-instagram"></i>Instagram</a>
+            <a class="text-decoration-none text-white" href="#"><i class="me-2 fa-brands fa-facebook"></i>Facebook</a>
+            <a class="text-decoration-none text-white" href="#"><i class="me-2 fa-brands fa-twitter"></i>Twitter</a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-white px-2 mt-5" />
+      <p class="text-white ms-3 my-3 text-center">&copy; www.satayummy.com , All Right Reserved. Designed By VitoFirman</p>
+      <p class="text-white ms-3 text-center">Made With <i class="text-danger fa-solid fa-heart"></i> By VitoFirman</p>
+    </footer>
+
+    <!-- bootsrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- my script -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
