@@ -16,13 +16,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <!-- my css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <div class="spinner-wrapper d-flex justify-content-center align-items-center">
-  <div class="spinner-border text-primary" role="status"></div>
-</div>
-
-
+      <div class="spinner-border text-primary" role="status"></div>
+    </div>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top bg-opacity-10 navbar-custom">
       <div class="container-fluid py-1">
@@ -49,15 +49,17 @@
 
     <!-- Banner -->
     <div class="container-fluid banner">
-      <h1>Enjoy Our Delicious Satay</h1>
-      <p class="text-white w-50 mt-3">
-        Restoran sate dengan cita rasa autentik dan bumbu khas nusantara. Daging dipilih secara selektif, dibakar sempurna, dan disajikan hangat dengan sambal serta lontong yang menggoda. Cocok untuk makan bersama keluarga maupun sahabat.
-      </p>
-      <a href="#order" class="btn btn-primary btn-lg rounded-0">PESAN SEKARANG</a>
+      <div data-aos="fade-right">
+        <h1>Enjoy Our Delicious Satay</h1>
+        <p class="text-white w-50 mt-3 mx-auto">
+          Restoran sate dengan cita rasa autentik dan bumbu khas nusantara. Daging dipilih secara selektif, dibakar sempurna, dan disajikan hangat dengan sambal serta lontong yang menggoda. Cocok untuk makan bersama keluarga maupun sahabat.
+        </p>
+        <a href="#order" class="btn btn-primary btn-lg rounded-0">PESAN SEKARANG</a>
+      </div>
     </div>
 
     <!-- section 1 -->
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-5" data-aos="zoom-in">
       <h2 class="text-primary text-center fs-1" style="font-family: Cookie, cursive;">Kenapa Memilih Kami?</h2>
       <div class="card-container d-flex gap-4 justify-content-center mt-5">
         <div class="card border-0 shadow" style="width: 18rem">
@@ -93,41 +95,31 @@
     </div>
 
     <!-- section 2 -->
-     <div class="container-fluid mt-5 pt-5">
+     <div class="container-fluid mt-5 pt-5" data-aos="fade-up">
       <h2 class="text-primary text-center fs-1" style="font-family: Cookie, cursive">About us</h2>
-
       <div class="container-sec2 d-flex align-items-center justify-content-center mt-5">
         <div class="container-fluid w-75">
           <div class="row g-3">
-
-            <!-- FOTO 1 (geser ke atas) -->
             <div class="col-6 d-flex justify-content-end">
               <img src="./assets/img/img1.jpg"
                   class="img-fluid w-75 hover-up"
                   style="height: 200px; object-fit: cover" />
             </div>
-
-            <!-- FOTO 2 (geser ke atas) -->
             <div class="col-6 d-flex align-items-end">
               <img src="./assets/img/img2.jpg"
                   class="img-fluid w-75 hover-up"
                   style="height: 150px; object-fit: cover" />
             </div>
-
-            <!-- FOTO 3 (geser ke bawah) -->
             <div class="col-6 d-flex align-items-start justify-content-end h-75">
               <img src="./assets/img/img3.jpg"
                   class="img-fluid w-75 hover-down"
                   style="height: 150px; object-fit: cover" />
             </div>
-
-            <!-- FOTO 4 (geser ke bawah) -->
             <div class="col-6">
               <img src="./assets/img/img4.jpg"
                   class="img-fluid w-75 hover-down"
                   style="height: 200px; object-fit: cover" />
             </div>
-
           </div>
         </div>
 
@@ -152,7 +144,7 @@
     </div>
 
      <!-- section 3 -->
-      <div class="container-fluid mt-5 pt-5">
+      <div class="container-fluid mt-5 pt-5" data-aos="fade-right">
         <h2 class="text-primary text-center fs-1" style="font-family: Cookie, cursive;">Food Menu</h2>
         <h3 class="text-center text-secondary mb-4">Most Popular Menu</h3>
         <div class="card-sec3 d-flex justify-content-center gap-4">
@@ -187,12 +179,12 @@
       </div>
 
       <!-- section 4 -->
-       <div id="order" class="container-fluid mt-5 pt-5">
+       <div id="order" class="container-fluid mt-5 pt-5 overflow-hidden">
           <div class="sec4 d-flex">
             <div class="rest">
               <img src="./assets/img/rest2.jpg" alt="" style="width: 700px; height: 500px;" />
             </div>
-            <div class="booking w-100">
+            <div class="booking w-100" data-aos="fade-up">
               <h3 class="text-white text-center mt-3 fs-1 text-primary" style="font-family: Cookie, cursive;">Order Online Table</h3>
               <div class="formBooking align-content-center">
                 <form action="" class="d-flex justify-content-center flex-column gap-2 px-5 pt-3">
@@ -271,10 +263,10 @@
               <h2 class="text-primary" style="font-family: Cookie, cursive;">Opening</h2>
               <div class="footerList d-flex flex-column gap-2">
                 <span class="text-white"><i class="me-2 fa-solid fa-door-open"></i>Monday - Saturday</span>
-                <span class="text-white">09AM - 09PM</span>
+                <span class="text-white">sesuai mood</span>
                 <br>
                 <span class="text-white"><i class="me-2 fa-solid fa-door-open"></i>Sunday</span>
-                <span class="text-white">10AM - 08PM</span>
+                <span class="text-white">malas jir</span>
               </div>
             </div>
             <div class="flex flex-column mx-5">
@@ -296,5 +288,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <!-- my script -->
     <script src="./assets/js/script.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        once: true,
+      });
+    </script>
   </body>
 </html>

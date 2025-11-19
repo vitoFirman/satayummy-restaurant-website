@@ -24,15 +24,13 @@ document.getElementById('btnTop').addEventListener('click', function () {
 
 const spinnerWrapperEl = document.querySelector('.spinner-wrapper');
 
-// loader hilang 1 detik
 window.addEventListener('load', () => {
   spinnerWrapperEl.classList.add('hidden');
   setTimeout(() => {
     spinnerWrapperEl.style.display = 'none';
-  }, 1000); // match duration CSS
+  }, 1000);
 });
 
-// loader muncul saat pindah halaman
 window.addEventListener('beforeunload', () => {
   spinnerWrapperEl.style.display = 'flex';
   setTimeout(() => {
