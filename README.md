@@ -11,3 +11,4 @@ https://vitofirman.github.io/satayummy-restaurant-website/
 - **JavaScript**
 - **Google Fonts**
 - **Font Awesome Icons**
+- **AOS (Animate On Scroll)**
